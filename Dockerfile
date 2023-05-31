@@ -1,4 +1,4 @@
-FROM node:18.16
+FROM node:18.16-alpine
 
 RUN apt-get update && \
     apt-get install -y
