@@ -1,7 +1,6 @@
 FROM node:18.16-alpine
 
-RUN apt-get update && \
-    apt-get install -y
+RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
